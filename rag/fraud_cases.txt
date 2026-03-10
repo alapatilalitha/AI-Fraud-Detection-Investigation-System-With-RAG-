@@ -1,0 +1,19 @@
+Case 1:
+Large transactions from a new device shortly after password change
+often indicate account takeover fraud.
+
+Case 2:
+Multiple transactions in different geographic locations within a
+short period of time can signal card cloning or compromised accounts.
+
+Case 3:
+High value electronics purchases are common in fraud schemes
+because they can be resold quickly.
+
+Case 4:
+Transactions occurring at unusual hours combined with
+large transaction amounts may indicate automated fraud attempts.
+
+Case 5:
+Rapid sequence of transactions from different merchants
+can signal testing of stolen credit card numbers.

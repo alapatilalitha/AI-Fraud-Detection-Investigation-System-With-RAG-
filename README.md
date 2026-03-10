@@ -86,39 +86,6 @@ The dashboard includes:
 - Llama3 (via Ollama)
 - Retrieval-Augmented Generation (RAG)
 
-**Project Structure**
-## System Architecture
-
-The system follows a hybrid AI pipeline combining machine learning fraud detection with Retrieval-Augmented Generation (RAG) for investigation.
-
-Transaction Data
-        │
-        ▼
-Fraud Detection Model (XGBoost)
-        │
-        ▼
-Fraud Risk Score
-        │
-        ▼
-High-Risk Transaction Trigger
-        │
-        ▼
-RAG Pipeline
-   │
-   ├── Vector Search (FAISS)
-   │       │
-   │       ▼
-   │   Fraud Pattern Knowledge Base
-   │
-   ▼
-Large Language Model (Llama3 via Ollama)
-        │
-        ▼
-AI Fraud Investigation Report
-        │
-        ▼
-Streamlit Dashboard
-
 ## Dashboard Preview
 
 ### Fraud Detection Dashboard

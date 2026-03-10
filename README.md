@@ -1,5 +1,4 @@
-## AI Fraud Detection & Investigation System
-
+## c
 This project demonstrates an end-to-end AI system that detects suspicious financial transactions and automatically generates an investigation report using machine learning and large language models.
 
 The system simulates financial transactions, predicts fraud risk using a trained model, retrieves known fraud patterns using a vector search system, and generates an AI-powered investigation explaining the potential fraud scenario.
@@ -85,32 +84,48 @@ The dashboard includes:
 - Retrieval-Augmented Generation (RAG)
 
 **Project Structure**
-ai-fraud-detection-rag
-│
-├── data
-│   └── creditcard.csv
-│
-├── model
-│   └── fraud_model.pkl
-│
-├── rag
-│   ├── fraud_cases.txt
-│   ├── retriever.py
-│   ├── investigator.py
-│   └── vector_store.py
-│
-├── src
-│   └── fraud_pipeline.py
-│
-├── fraud_dashboard.py
-├── train_model.py
-└── README.md
+## System Architecture
 
-![Fraud Dashboard](screenshots/dashboard.png)
+The system follows a hybrid AI pipeline combining machine learning fraud detection with Retrieval-Augmented Generation (RAG) for investigation.
 
-![Investigator Recommendation](screenshots/recommendation.png)
+Transaction Data
+        │
+        ▼
+Fraud Detection Model (XGBoost)
+        │
+        ▼
+Fraud Risk Score
+        │
+        ▼
+High-Risk Transaction Trigger
+        │
+        ▼
+RAG Pipeline
+   │
+   ├── Vector Search (FAISS)
+   │       │
+   │       ▼
+   │   Fraud Pattern Knowledge Base
+   │
+   ▼
+Large Language Model (Llama3 via Ollama)
+        │
+        ▼
+AI Fraud Investigation Report
+        │
+        ▼
+Streamlit Dashboard
 
-![AI Investigation](screenshots/investigation.png)
+## Dashboard Preview
+
+### Fraud Detection Dashboard
+![Dashboard](Screenshots/dashboard.png)
+
+### Fraud Investigation Recommendation
+![Recommendation](Screenshots/recommendation.png)
+
+### AI Fraud Investigation
+![Investigation](Screenshots/investigation.png)
 
 **How to Run the Project**
 1. Clone the repository

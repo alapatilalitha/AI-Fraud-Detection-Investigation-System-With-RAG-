@@ -1,4 +1,4 @@
-## c
+## AI Fraud Detection & Investigation System
 This project demonstrates an end-to-end AI system that detects suspicious financial transactions and automatically generates an investigation report using machine learning and large language models.
 
 The system simulates financial transactions, predicts fraud risk using a trained model, retrieves known fraud patterns using a vector search system, and generates an AI-powered investigation explaining the potential fraud scenario.
@@ -18,6 +18,9 @@ This system simulates how a modern fraud detection pipeline works:
 
 ## System Architecture
 
+The system combines a machine learning fraud detection model with a Retrieval-Augmented Generation (RAG) pipeline to investigate suspicious transactions.
+
+```
 Transaction Data
         │
         ▼
@@ -27,25 +30,25 @@ Fraud Detection Model (XGBoost)
 Fraud Risk Score
         │
         ▼
-RAG Pipeline Triggered
+High-Risk Transaction Trigger
         │
         ▼
-Vector Search (FAISS)
+RAG Pipeline
+   │
+   ├── Vector Search (FAISS)
+   │       │
+   │       ▼
+   │   Fraud Pattern Knowledge Base
+   │
+   ▼
+Large Language Model (Llama3 via Ollama)
         │
         ▼
-Fraud Case Knowledge Base
-        │
-        ▼
-Relevant Context Retrieved
-        │
-        ▼
-LLM Analysis (Llama3 - Ollama)
-        │
-        ▼
-AI Fraud Investigation
+AI Fraud Investigation Report
         │
         ▼
 Streamlit Dashboard
+```
 
 ## Features
 **Fraud Detection Model**
